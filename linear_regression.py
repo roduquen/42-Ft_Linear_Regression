@@ -27,7 +27,7 @@ def plotData(data, theta, normalizer):
     y_axis = data[:, 1]
     plt.scatter(x_axis, y_axis, c="Blue")
     plt.plot([data.min(axis=0)[0], data.max(axis=0)[0]], [theta[0], theta[0] + theta[1] * (data.max(axis=0)[0] - normalizer[0]) / normalizer[1]], 'r')
-    plt.xlabel("")
+    plt.xlabel("Mileage (in miles)")
     plt.ylabel("Price (in euros)")
     plt.title("Linear regression for car price")
     plt.show()
